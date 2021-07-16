@@ -97,8 +97,10 @@ textarea {
 
 
 html {
+  font-size: 16px;
   background-color: #fff;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -112,7 +114,31 @@ body {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header,
+footer {
+    background: lightgray;
+    color: #585858;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    font-family: 'Prata', serif;
+    font-size: 3.75rem;
+}
+
+main {
+    background: plum;
+    color: #666666;
+    height: 90px;
+    width: 100%;
+    padding: 1em;
 }
 
 .div-1, .div-2, .div-3 {
@@ -122,14 +148,23 @@ body {
   font-size: 1em;
   text-align: center;
   background-color: thistle;
-  height: 300px;
+  height: 250px;
   width: 30%;
   padding: 0 1em 0 1em;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: plum;
+    text-transform: none;
+}
 
 
 
